@@ -8,5 +8,16 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+  modules: [
+    '@element-plus/nuxt'
+  ],
+  // css:[
+  //   // 'element-plus/dist/index.css',
+  // ],
+  elementPlus: {
+    icon: 'ElIcon',
+    // importStyle: 'scss',
+    themes: ['dark'],
+  },
 })
