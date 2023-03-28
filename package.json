@@ -16,5 +16,8 @@
     "nuxt": "^3.2.3",
     "sass": "^1.58.3",
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7"
   }
 }

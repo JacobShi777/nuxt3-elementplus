@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@element-plus/nuxt',
+    '@pinia/nuxt',
   ],
   // css:[
   //   // 'element-plus/dist/index.css',
