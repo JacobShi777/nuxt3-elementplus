@@ -3,7 +3,9 @@
 
 <template>
   <div>
-    <div>Index Page</div>
+    <div class="abc">
+      Index Page
+    </div>
     <NuxtLink href="/detail/1">
       gotoDetailPage
     </NuxtLink>
@@ -12,4 +14,6 @@
 </template>
 
 <style lang="scss" scoped>
+.abc {background-color: #FFFFFF;
+}
 </style>
