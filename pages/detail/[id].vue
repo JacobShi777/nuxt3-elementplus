@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const { data: tableData } = await useFetch("/gateway/contactus/list")
 </script>
 
 <template>
@@ -8,6 +9,7 @@
     <div>
       <img class="cat" src="/cat01.jpeg" alt="">
     </div>
+    <div>{{ tableData }}</div>
   </div>
 </template>
 

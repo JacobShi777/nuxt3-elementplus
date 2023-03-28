@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import zhCn from "element-plus/es/locale/lang/zh-cn"
 
-const timeValue = ref(null)
+const timeValue = ref()
 </script>
 
 <template>
