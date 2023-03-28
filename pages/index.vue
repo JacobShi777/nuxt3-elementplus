@@ -4,7 +4,9 @@
 <template>
   <div>
     <div>Index Page</div>
-    <NuxtLink href="/detail/1">gotoDetailPage</NuxtLink>
+    <NuxtLink href="/detail/1">
+      gotoDetailPage
+    </NuxtLink>
     <MyElementPlus />
   </div>
 </template>

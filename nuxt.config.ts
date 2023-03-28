@@ -4,13 +4,13 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@import "~/assets/styles/_variables.scss";`
-        }
-      }
-    }
+          additionalData: '@import "~/assets/styles/_variables.scss";',
+        },
+      },
+    },
   },
   modules: [
-    '@element-plus/nuxt'
+    '@element-plus/nuxt',
   ],
   // css:[
   //   // 'element-plus/dist/index.css',
@@ -22,8 +22,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     devProxy: {
-      "/gateway": {
-        target: "http://192.168.0.19:8887",
+      '/gateway': {
+        target: 'http://192.168.0.19:8887',
         changeOrigin: true,
         prependPath: true,
       },
@@ -31,8 +31,8 @@ export default defineNuxtConfig({
     // 该配置用于服务端请求转发
     routeRules: {
       '/gateway/**': {
-        proxy: 'http://192.168.0.19:8887/**'
-      }
-    }
+        proxy: 'http://192.168.0.19:8887/**',
+      },
+    },
   },
 })
