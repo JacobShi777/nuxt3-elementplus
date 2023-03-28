@@ -5,6 +5,8 @@ specifiers:
   '@element-plus/icons-vue': ^2.1.0
   '@element-plus/nuxt': ^1.0.4
   '@pinia/nuxt': ^0.4.7
+  '@vueuse/core': ^9.13.0
+  '@vueuse/nuxt': ^9.13.0
   element-plus: ^2.2.36
   eslint: ^8.36.0
   nuxt: ^3.2.3
@@ -18,6 +20,8 @@ devDependencies:
   '@antfu/eslint-config': 0.37.0_j4766f7ecgqbon3u7zlxn5zszu
   '@element-plus/icons-vue': 2.1.0
   '@element-plus/nuxt': 1.0.4_ojxhhe6hwsrvru2w26z5igq6hq
+  '@vueuse/core': 9.13.0
+  '@vueuse/nuxt': 9.13.0_nuxt@3.2.3
   element-plus: 2.2.36
   eslint: 8.36.0
   nuxt: 3.2.3_rz77eijk5uzstdodz762vykgae
@@ -2125,6 +2129,24 @@ packages:
 
   /@vueuse/metadata/9.13.0:
     resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
+    dev: true
+
+  /@vueuse/nuxt/9.13.0_nuxt@3.2.3:
+    resolution: {integrity: sha512-JunH/w6nFIwCyaZ0s+pfrYFMfBzGfhkwmFPz7ogHFmb71Ty/5HINrYOAOZCXpN44X6QH6FiJq/wuLLdvYzqFUw==}
+    peerDependencies:
+      nuxt: ^3.0.0
+    dependencies:
+      '@nuxt/kit': 3.2.3
+      '@vueuse/core': 9.13.0
+      '@vueuse/metadata': 9.13.0
+      local-pkg: 0.4.3
+      nuxt: 3.2.3_rz77eijk5uzstdodz762vykgae
+      vue-demi: 0.13.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - vue
     dev: true
 
   /@vueuse/shared/9.13.0:
