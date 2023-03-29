@@ -22,6 +22,10 @@ export default defineNuxtConfig({
     // importStyle: 'scss',
     themes: ['dark'],
   },
+  // vueuse
+  vueuse: {
+    ssrHandlers: true,
+  },
   nitro: {
     devProxy: {
       '/gateway': {
