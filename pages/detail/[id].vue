@@ -19,6 +19,7 @@ const { data: tableData } = await useFetch('/gateway/contactus/list')
 .detail-child {
   color: $linkColor;
 }
+
 .cat {
   width: 100px;
 }
