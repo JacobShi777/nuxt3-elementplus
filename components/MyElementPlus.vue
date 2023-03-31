@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { View } from '@element-plus/icons-vue'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
 const timeValue = ref()
@@ -6,9 +7,10 @@ const timeValue = ref()
 
 <template>
   <div>
-    <el-button :icon="ElIconView">
+    <el-button :icon="View">
       Hello
     </el-button>
+    <el-icon><View /></el-icon>
     {{ timeValue }}
     <el-config-provider :locale="zhCn">
       <el-date-picker
