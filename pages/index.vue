@@ -8,8 +8,13 @@
       gotoDetailPage
     </NuxtLink>
     <MyElementPlus />
+    <div class="test-stylelint" />
   </div>
 </template>
 
 <style lang="scss" scoped>
+.test-stylelint {
+  height: 100px;
+  background-color: red;
+}
 </style>
