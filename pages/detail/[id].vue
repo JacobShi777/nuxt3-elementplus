@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { type IGetCooperationData } from '@/api/homepage/types'
-import { getCooperationDataApi } from '@/api/homepage'
+import { useHomepageApi } from '@/api/homepage'
 
-const runtimeConfig = useRuntimeConfig()
+const homepageApi = useHomepageApi()
 
 const cooperationResponse = ref<IGetCooperationData[]>([])
-const { data } = await getCooperationDataApi(runtimeConfig.public.VITE_BASE_API)
+const { data } = await homepageApi.getCooperationDataApi()
 if (data.value !== null) {
   cooperationResponse.value = data.value.data
 }
