@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
@@ -10,9 +9,6 @@ const runtimeConfig = useRuntimeConfig()
     </NuxtLink>
     <MyElementPlus />
     <div class="test-stylelint" />
-    <div>
-      runtimeConfig: {{ runtimeConfig.public.VITE_BASE_API }}
-    </div>
   </div>
 </template>
 

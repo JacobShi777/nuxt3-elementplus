@@ -2,10 +2,10 @@
 import { type IGetCooperationData } from '@/api/homepage/types'
 import { getCooperationDataApi } from '@/api/homepage'
 
-const runtimeConfig = useRuntimeConfig()
+const env = import.meta.env
 
 const cooperationResponse = ref<IGetCooperationData[]>([])
-const { data } = await getCooperationDataApi(runtimeConfig.public.VITE_BASE_API)
+const { data } = await getCooperationDataApi()
 if (data.value !== null) {
   cooperationResponse.value = data.value.data
 }
@@ -20,6 +20,7 @@ if (data.value !== null) {
     <div>
       <img class="cat" src="/cat01.jpeg" alt="">
     </div>
+    <div>{{ env }}</div>
     <div>{{ cooperationResponse }}</div>
   </div>
 </template>
