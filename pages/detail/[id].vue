@@ -2,10 +2,10 @@
 import { type IGetCooperationData } from '@/api/homepage/types'
 import { getCooperationDataApi } from '@/api/homepage'
 
-// const runtimeConfig = useRuntimeConfig()
+const runtimeConfig = useRuntimeConfig()
 
 const cooperationResponse = ref<IGetCooperationData[]>([])
-const { data } = await getCooperationDataApi()
+const { data } = await getCooperationDataApi(runtimeConfig.public.VITE_BASE_API)
 if (data.value !== null) {
   cooperationResponse.value = data.value.data
 }
