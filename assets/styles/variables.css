@@ -1,0 +1,14 @@
+:root {
+  --navbar-height: 70px;
+  --w-width: 1280px;
+
+  --color-cursor-pointer: hsla(160, 100%, 37%, 1);
+  --color-normal-green: #18A058;
+  --color-normal-blue: #3095FA;
+  --color-background-blue: #E9F3FF;
+  --color-hover-blue: #6EB3FF;
+  --color-background-grey: #F8F8F8;
+  
+  --color-text-normal-grey: #636e79;
+  --color-text-light-grey: #8e8e8e;
+}

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { data: tableData } = await useFetch('/gateway/contactus/list')
+const { data: tableData } = await useFetch('/api/contactus/list')
 </script>
 
 <template>

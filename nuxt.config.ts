@@ -4,7 +4,10 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/assets/styles/_variables.scss";',
+          additionalData: `
+            @import "~/assets/styles/_variables.scss";
+            @import "~/assets/styles/global.scss";
+          `,
         },
       },
     },
@@ -14,9 +17,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
   ],
-  // css:[
-  //   // 'element-plus/dist/index.css',
-  // ],
+  css: [
+    '@/assets/styles/variables.css',
+  ],
   elementPlus: {
     icon: 'ElIcon',
     // importStyle: 'scss',
@@ -28,17 +31,23 @@ export default defineNuxtConfig({
   },
   nitro: {
     devProxy: {
-      '/gateway': {
-        target: 'http://192.168.0.19:8887',
+      '/api': {
+        target: 'http://192.168.10.5:8887',
         changeOrigin: true,
         prependPath: true,
       },
     },
     // 该配置用于服务端请求转发
     routeRules: {
-      '/gateway/**': {
-        proxy: 'http://192.168.0.19:8887/**',
+      '/api/**': {
+        proxy: 'http://192.168.10.5:8887/**',
       },
+      '/nossr/**': {
+        ssr: false,
+      },
+      // '/': {
+      //   redirect: '/nossr',
+      // },
     },
   },
 })
