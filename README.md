@@ -19,11 +19,20 @@ pnpm i
 pnpm dev
 ```
 
-## 📦️ 打包
+## 📦️ 多环境打包
 
 ```bash
-# 构建正式环境
-pnpm build
+# 构建测试环境
+pnpm build:test
+pnpm post
+
+# 构建预发布环境
+pnpm build:staging
+pnpm post
+
+# 构建生产环境
+pnpm build:prod
+pnpm post
 ```
 
 ## Git 提交规范参考

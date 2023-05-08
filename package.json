@@ -1,11 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --port=7001",
+    "dev": "nuxt dev --port=7001 --mode development",
+    "build:test": "nuxt build --mode test",
+    "build:staging": "nuxt build --mode staging",
+    "build:prod": "nuxt build --mode production",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "post": "mkdir .output/server/node_modules/@popperjs && mv .output/server/node_modules/@sxzz/popperjs-es .output/server/node_modules/@popperjs/core"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
