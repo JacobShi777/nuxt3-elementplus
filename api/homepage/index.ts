@@ -5,9 +5,10 @@ import { request } from '@/utils/service'
 
 // #region 合作伙伴
 /** 查 */
-export function getCooperationDataApi(baseURL: string) {
+export function getCooperationDataApi() {
+  const config = useRuntimeConfig()
   return request<Table.GetCooperationResponseData>({
-    baseURL,
+    baseURL: config.public.baseApi,
     url: '/homepageCooperation/list',
     method: 'get',
   })

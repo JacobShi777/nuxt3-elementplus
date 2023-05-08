@@ -11,7 +11,7 @@ const runtimeConfig = useRuntimeConfig()
     <MyElementPlus />
     <div class="test-stylelint" />
     <div>
-      runtimeConfig: {{ runtimeConfig.public.VITE_BASE_API }}
+      runtimeConfig: {{ runtimeConfig.public }}
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxt dev --port=7001 --mode development",
+    "dev": "nuxt dev --port=7001 --dotenv .env.development",
     "build:test": "nuxt build --mode test",
     "build:staging": "nuxt build --mode staging",
     "build:prod": "nuxt build --mode production",
