@@ -1,5 +1,14 @@
 <script lang="ts" setup>
-const { data: tableData } = await useFetch('/api/contactus/list')
+import { type IGetCooperationData } from '@/api/homepage/types'
+import { getCooperationDataApi } from '@/api/homepage'
+
+// const runtimeConfig = useRuntimeConfig()
+
+const cooperationResponse = ref<IGetCooperationData[]>([])
+const { data } = await getCooperationDataApi()
+if (data.value !== null) {
+  cooperationResponse.value = data.value.data
+}
 </script>
 
 <template>
@@ -11,7 +20,7 @@ const { data: tableData } = await useFetch('/api/contactus/list')
     <div>
       <img class="cat" src="/cat01.jpeg" alt="">
     </div>
-    <div>{{ tableData }}</div>
+    <div>{{ cooperationResponse }}</div>
   </div>
 </template>
 
