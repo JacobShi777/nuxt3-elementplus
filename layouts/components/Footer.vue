@@ -60,7 +60,7 @@ function handleRoute(link: string) {
           <div style="margin-bottom: 5px;">
             微信公众号
           </div>
-          <el-image src="/wechat.jpg" style="width: 128px;" />
+          <el-image src="/favicon.ico" style="width: 128px;" />
         </div>
       </div>
     </div>

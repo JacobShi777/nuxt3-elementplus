@@ -1,26 +1,18 @@
 <script lang="ts" setup>
+import Carousel from '@/views/homepage/Carousel.vue'
+import TopNews from '@/views/homepage/TopNews.vue'
+import Cooperation from '@/views/homepage/Cooperation.vue'
 import Footer from '@/layouts/components/Footer.vue'
-const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
   <div>
-    <div>Index Page</div>
-    <NuxtLink href="/detail/1">
-      gotoDetailPage
-    </NuxtLink>
-    <MyElementPlus />
-    <div class="test-stylelint" />
-    <div>
-      runtimeConfig: {{ runtimeConfig.public.VITE_BASE_API }}
-    </div>
+    <Carousel />
+    <TopNews />
+    <Cooperation />
     <Footer />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.test-stylelint {
-  height: 100px;
-  background-color: red;
-}
 </style>

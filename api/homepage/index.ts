@@ -6,7 +6,7 @@ import { request } from '@/utils/service'
 export function getCooperationDataApi() {
   return request<Table.GetCooperationResponseData>({
     baseURL: useRuntimeConfig().public.VITE_BASE_API,
-    url: '/homepageCooperation/list',
+    url: '/homepage/getCooperation',
     method: 'get',
   })
 }

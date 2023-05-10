@@ -5,7 +5,7 @@ export const footerNavOptions = [
     route: '/introduction',
   },
   {
-    value: 'newsCenter',
+    value: 'news',
     label: '新闻中心',
     route: '/news/company',
   },
