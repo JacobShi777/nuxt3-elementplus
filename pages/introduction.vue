@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    NavBar
+    公司介绍
   </div>
 </template>
 

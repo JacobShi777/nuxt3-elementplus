@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import Header from './components/Header.vue'
 </script>
 
 <template>
   <div>
-    <Header />
-    <slot />
+    联系我们
   </div>
 </template>
 

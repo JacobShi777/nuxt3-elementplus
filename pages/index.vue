@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import Footer from '@/layouts/components/Footer.vue'
 const runtimeConfig = useRuntimeConfig()
 </script>
 
@@ -13,6 +14,7 @@ const runtimeConfig = useRuntimeConfig()
     <div>
       runtimeConfig: {{ runtimeConfig.public.VITE_BASE_API }}
     </div>
+    <Footer />
   </div>
 </template>
 
