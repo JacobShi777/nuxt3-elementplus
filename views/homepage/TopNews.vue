@@ -49,7 +49,7 @@ function goToNewsDetail(id: number) {
 <template>
   <div class="top-news-page">
     <div class="title">
-      <span>新闻中心</span>
+      <span>新闻</span>
     </div>
     <div class="thumbnail-card">
       <div class="thumbnail-card__image">

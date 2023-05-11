@@ -44,7 +44,7 @@ const cooperationResponseData = ref<IGetCooperationData[]>([
 <template>
   <div class="homepage-cooperation">
     <div class="cooperation-title">
-      <span>合作伙伴</span>
+      <span>展示</span>
     </div>
     <div class="cooperation-content">
       <el-image
