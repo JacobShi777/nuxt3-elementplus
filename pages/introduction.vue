@@ -41,6 +41,22 @@ const historyRef = ref()
 function scrollToHistory() {
   if (historyRef.value) { historyRef.value.scrollIntoView({ behavior: 'smooth' }) }
 }
+
+// 动态导航 配合 <div :ref="refs[index]" /> 使用
+// const refs = computed<any[]>(() => {
+//   const res: any[] = []
+//   feeds.value.forEach(() => {
+//     const _ref = ref<any>()
+//     res.push(_ref)
+//   })
+//   return res
+// })
+
+// function scroll(index: number) {
+//   if (refs.value[index].value[0])
+//     refs.value[index].value[0].scrollIntoView({ behavior: 'smooth' })
+// }
+
 // #endregion
 </script>
 

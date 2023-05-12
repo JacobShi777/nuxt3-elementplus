@@ -38,6 +38,11 @@ const cooperationResponseData = ref<IGetCooperationData[]>([
     name: '合作伙伴6',
     picture: '/sunset-679115_1280.jpeg',
   },
+  {
+    id: 7,
+    name: '合作伙伴7',
+    picture: '/cat01.jpeg',
+  },
 ])
 </script>
 
@@ -72,11 +77,16 @@ const cooperationResponseData = ref<IGetCooperationData[]>([
     text-align: center;
   }
 
+  .cooperation-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px 20px;
+  }
+
   :deep(.el-image) {
-    width: 220px;
-    height: 130px;
+    height: 180px;
     padding: 5px 15px;
-    margin: 5px 10px;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   }
 }
